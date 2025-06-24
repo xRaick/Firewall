@@ -1,7 +1,7 @@
 # ------------------------------
 # Global Variables
 # ------------------------------
-$scriptRoot = "C:\Scripts\Firewall"
+$scriptRoot = "C:\Path\To\Your\Working\Directory"
 $logFile     = "$scriptRoot\firewall-update.log"
 $tempFile    = "$scriptRoot\delegated-ripencc-extended-latest"
 $ripeUrl     = "https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-extended-latest"
@@ -10,6 +10,11 @@ $ripeUrl     = "https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-extende
 $batchSize = 10000
 
 # Target countries
+# Note: Ensure the country codes are in uppercase as per RIPE's format
+# For example: 'DE' for Germany, 'FR' for France, 'BE', 'LU' for Luxembourg
+# Add or remove country codes as necessary
+# The list below is for BENELUX countries excluding the Netherlands
+# Adjust the list as needed for your specific requirements
 $countryCodes = @('DE','FR','BE','LU')
 
 # Internal cache for CIDR conversions
